@@ -1,0 +1,12 @@
+version: "3.4"
+
+services:
+  eshop-cms:
+    container_name: eshop.CMS
+    build:
+      context: ./eshop-cms
+      dockerfile: Dockerfile
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 7150:7150
